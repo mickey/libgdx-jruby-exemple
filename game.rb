@@ -9,7 +9,6 @@ java_import com.badlogic.gdx.graphics.GL10
 java_import com.badlogic.gdx.graphics.Mesh
 java_import com.badlogic.gdx.graphics.VertexAttribute
 java_import com.badlogic.gdx.graphics.VertexAttributes
-#java_import com.badlogic.gdx.graphics.VertexAttributes.Usage
 
 class Game
   include ApplicationListener
@@ -28,23 +27,21 @@ class Game
   end
 
   def resize width, height
-    
   end
-  
+
   def pause
-    
+
   end
 
   def resume
-    
+
   end
 
   def dispose
-    
+
   end
 end
 
 java_import com.badlogic.gdx.backends.lwjgl.LwjglApplication
 
 LwjglApplication.new(Game.new, "Game", 480, 320, false)
-
